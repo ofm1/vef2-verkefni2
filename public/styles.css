@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ th, td {
+  border: 1px solid black;
+}
+
+div {
+  display: list-item;
+}
+
+ul{
+  align-self: center;
+  max-width: 20%;
+  display: block;
+  margin: auto;
+}
+
+form {
+  align-self: center;
+  max-width: 40px;
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
+
+label { 
+  padding: 20px;
+}
+
+a {
+  margin: auto;
+  padding: 10px;
+}
+
+
+
+table {
+  padding:30px;
+  margin: auto;
+}
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  background-color: #eee;
+  color: #333;
+}

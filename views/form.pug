@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div
+    p #{data.message}
+    ul
+      each error in data.error
+        li= error
+        
+    form(method = 'post', action='/addInfo')
+      label(for='name') Nafn:
+        input(type='text', name='name',id='name' ,value= data.name)
+      
+      label(for='email') Netfang:
+        input(type='email', name='email',id='email' ,value= data.email)
+      
+      label(for='ssn') kennitala:
+        input(type='text', name = 'ssn',id='ssn', value= data.ssn)
+      
+      label(for='amount') Fjöldi:
+        input(type='number', name='amount',id ='amount' ,value= data.amount)
+      
+      button Senda
+    a(href=data.href) #{data.a}
+
+
+  

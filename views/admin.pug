@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  table
+    tr 
+      th Id
+      th Dagsetning
+      th Nafn
+      th Kennitala
+      th Netfang
+      th Fjöldi
+    each info in infos
+      tr
+        td= info.id
+        td= info.date
+        td= info.name
+        td= info.ssn
+        td= info.email
+        td= info.amount 
+  
+  a(href ='/') Forsíða
+  a(href = '/logout') Skrá út
+  
+
+  
